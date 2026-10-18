@@ -3,10 +3,10 @@
 // offline, it plays the saved one.
 // the songs: saved once, then played from the phone. a new or re-cut song changes SONGS_CACHE and the phone fetches
 // them again. a song that fails to save is just fetched the next time it plays.
-const CACHE = "energy-empire-d517f8d487";
-const SONGS_CACHE = "energy-empire-songs-7b49868d9f";
+const CACHE = "energy-empire-89f138ffac";
+const SONGS_CACHE = "energy-empire-songs-bf21a9e8fb";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "icon-1024.png"];
-const SONGS = ["energy-empire-main.mp3", "radio-antler-ale.mp3", "radio-gators-aid.mp3", "radio-huckleberry-panquake.mp3", "radio-latte-tornado.mp3", "radio-local-zoo-gift-shop.mp3", "radio-magic-carpet-ride.mp3", "radio-meteorologist-mixup.mp3", "radio-platypospine.mp3", "radio-play-sports.mp3", "radio-predator-punch.mp3", "radio-rocket-pop-rainstorm.mp3", "radio-southern-500.mp3", "radio-triple-berry.mp3", "radio-yellow-card.mp3"];
+const SONGS = [];
 const fresh = (url) => fetch(url, { cache: "no-cache", credentials: "same-origin" });
 const isSong = (url) => /\.mp3$/.test(new URL(url).pathname);
 self.addEventListener("install", (e) => {
