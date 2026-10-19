@@ -3,7 +3,7 @@
 // offline, it plays the saved one.
 // the songs: saved once, then played from the phone. a new or re-cut song changes SONGS_CACHE and the phone fetches
 // them again. a song that fails to save is just fetched the next time it plays.
-const CACHE = "energy-empire-47521e51e5";
+const CACHE = "energy-empire-e1b58a7f02";
 const SONGS_CACHE = "energy-empire-songs-d4120595a3";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "icon-1024.png"];
 const SONGS = ["energy-empire-main.mp3", "radio-intro-weather.mp3"];
